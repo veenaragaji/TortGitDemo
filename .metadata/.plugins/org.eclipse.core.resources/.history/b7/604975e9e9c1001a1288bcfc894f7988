@@ -1,0 +1,21 @@
+import java.lang.reflect.Method;
+
+public class Child  extends ParentClass{
+	
+	int a;
+	Child(){
+		super();
+		
+		a=12;
+		
+	}
+	static void add(){
+		System.out.println("Child add");
+	}
+	public  void childMethos(){
+		System.out.println("This is child method");
+	}
+	private  void privateMethod(){
+		System.out.println("This is child priate method");
+	}
+}

@@ -1,0 +1,7 @@
+
+public class Windows_AutoIT_Demo {
+	@Test
+	public void demo(){
+		
+	}
+}

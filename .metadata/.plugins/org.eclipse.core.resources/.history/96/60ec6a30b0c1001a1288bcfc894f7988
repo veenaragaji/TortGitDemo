@@ -1,0 +1,9 @@
+import java.lang.reflect.Method;
+
+public class MainClass {
+
+	public static void main(String[] args) throws NoSuchMethodException, SecurityException {
+		
+	}
+
+}

@@ -1,0 +1,29 @@
+package base;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class TestBase {
+	private static WebDriver driver;
+	public TestBase(){
+		}
+	
+	public WebDriver setUp(String browser){
+		if(browser.equalsIgnoreCase("chrome")){
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\hp au-620tx\\Desktop\\Selenium\\SW\\chromedriver_win32\\chromedriver.exe");
+			driver=new ChromeDriver();
+		}
+		else if(browser.equals("firefox")){
+			System.setProperty("webdriver.gecko.driver","C:/Users/hp au-620tx/Desktop/geckodriver-v0.19.1-win64/geckodriver.exe");
+			driver = new FirefoxDriver();
+		}
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.get("https://opensource-demo.orangehrmlive.com/index.php/auth/login");
+		return driver;
+	}
+	
+
+}

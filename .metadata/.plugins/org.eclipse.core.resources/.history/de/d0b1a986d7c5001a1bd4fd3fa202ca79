@@ -1,0 +1,20 @@
+package runner;
+
+import threads.HRMHomeThread;
+
+public class TestRunner {
+
+	public static void main(String[] args) {
+		
+		Thread t1=new HRMHomeThread("Thread 1","firefox");
+		Thread t2=new HRMHomeThread("Thread 2","chrome");
+		
+		
+		//System.out.println("Thread Started.........");
+		t1.start();
+		t2.start();
+		
+		
+	}
+
+}

@@ -1,0 +1,24 @@
+package cucumberProject.cucumber;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TestBase {
+	private static TestBase tb=null;
+	private  WebDriver driver;
+	private TestBase(){
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/main/java/executables/chromedriver.exe");
+		
+	}
+	public static TestBase getInstance(){
+		if(tb==null)
+			tb=new TestBase();
+		return tb;
+		
+	}
+	public WebDriver getDriver(){
+		driver=new ChromeDriver();
+		return driver;
+	}
+	
+}

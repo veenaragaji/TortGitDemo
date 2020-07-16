@@ -1,0 +1,25 @@
+
+public class Parent {
+	private int x;
+	int y;
+	 private Parent(){
+		x=12;
+		y=13;
+	}
+	
+	
+	static void add(){
+		int c=10;
+		System.out.println("static method"+c);
+	}
+	void sub(){
+		System.out.println("non static");
+	}
+	
+	public static void main(String args[]){
+		Parent p=new Parent();
+		
+		p.add();
+		
+	}
+}

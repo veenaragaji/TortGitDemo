@@ -1,0 +1,11 @@
+
+public class Parent {
+	
+	int x;
+	private void add(){
+		System.out.println("private");
+	}
+	void sub(){
+		System.out.println("private");
+	}
+}

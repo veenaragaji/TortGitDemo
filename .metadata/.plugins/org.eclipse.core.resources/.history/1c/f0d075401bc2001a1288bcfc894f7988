@@ -1,0 +1,46 @@
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class TestClass {
+
+	public static void main(String[] args) {
+		//System.out.println("Test");
+		for(int i=5,x=0;i>0;i--,x++){
+			for(int k=0;k<x;k++){
+				System.out.print(" ");
+			}
+			for(int j=0;j<i;j++){
+				
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+		//----------------HashSet----------------
+		HashSet<String> obj = new HashSet<String>();
+		obj.add("18");	obj.add("2");	obj.add("3");	obj.add("46");
+		System.out.println("HashSet -"+obj);
+		for(String s:obj){
+			System.out.println(s);
+		}
+		Iterator<String> it=obj.iterator();
+		while(it.hasNext()){
+			System.out.println(it.next());
+		}
+		
+		ArrayList<String> al=new ArrayList<String>();
+		al.add("1");al.add("2");al.add("3");al.add("4");
+		System.out.println("Arraylist -"+al);
+		for(String s:al){
+			System.out.println(s);
+		}
+		
+		
+	}
+	
+	
+	
+	
+
+}

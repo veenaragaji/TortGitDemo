@@ -1,0 +1,24 @@
+package threads;
+
+import pages.HRMHome;
+
+public class HRMHomeThread extends Thread {
+	HRMHome home;
+	public HRMHomeThread(){
+		home=new HRMHome();
+	}
+	
+	@Override
+	public void run(){
+		try{
+			home.setUp();
+			home.login();
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+		finally {
+			//home.tearDown();
+		}
+	}
+}

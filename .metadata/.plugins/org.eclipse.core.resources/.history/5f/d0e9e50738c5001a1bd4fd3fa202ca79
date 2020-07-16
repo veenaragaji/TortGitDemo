@@ -1,0 +1,15 @@
+package cucumberProject.cucumber;
+
+public class TestBase {
+	private static TestBase tb=null;
+	private TestBase(){
+		
+	}
+	public static TestBase init(){
+		if(tb==null)
+			tb=new TestBase();
+		return tb;
+		
+	}
+	
+}

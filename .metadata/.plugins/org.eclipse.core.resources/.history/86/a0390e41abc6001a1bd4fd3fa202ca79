@@ -1,0 +1,39 @@
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class FileUploadSendKeys {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\hp au-620tx\\Desktop\\Selenium\\SW\\chromedriver_win32\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		
+		driver.get("https://html.com/input-type-file/");
+		
+		/*WebDriverWait wait=new WebDriverWait(driver, 10);
+		if(wait.until(ExpectedConditions.alertIsPresent())==null){
+			System.out.println("alert not present");
+		}
+		else{
+			Alert a=driver.switchTo().alert();
+			a.dismiss();
+		}*/
+		WebDriverWait wait = new WebDriverWait(driver, 300 /*timeout in seconds*/);
+		if(wait.until(ExpectedConditions.alertIsPresent())==null)
+		    System.out.println("alert was not present");
+		else
+		    System.out.println("alert was present");
+		
+		
+		
+		WebElement e=driver.findElement(By.xpath("//input[@type='file']"));
+		e.sendKeys("F:\\Veena\\APIAutomation\\Documents\\jiraLinks.txt");
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;customListeners.Listeners&apos; to &apos;TestListeners&apos;&#x0D;&#x0A;- Original project: &apos;SeleniumFramework&apos;&#x0D;&#x0A;- Original element: &apos;customListeners.Listeners&apos;&#x0D;&#x0A;- Renamed element: &apos;customListeners.TestListeners&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Listeners&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;customListeners{Listeners.java[Listeners" matchStrategy="1" name="TestListeners" qualified="false" references="true" similarDeclarations="false" stamp="1594888173618" textual="false" version="1.0"/>
+</session>

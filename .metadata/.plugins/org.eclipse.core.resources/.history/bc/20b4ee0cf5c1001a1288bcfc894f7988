@@ -1,0 +1,26 @@
+import java.lang.reflect.Method;
+
+public class MainClass {
+
+	public static void main(String[] args) throws NoSuchMethodException, SecurityException {
+		Child c=new Child();
+		Parent p=new Parent();
+		
+		p.add();
+		c.add();
+		
+		c.sub();
+		p.sub();
+		//parent object storing child instance.Could not access child method
+		Parent p1=new Child();
+		p1.sub();
+		p1.add();
+	
+		
+	
+		
+		
+		
+	}
+
+}

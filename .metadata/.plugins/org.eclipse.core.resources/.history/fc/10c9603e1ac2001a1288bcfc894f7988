@@ -1,0 +1,23 @@
+import java.util.HashSet;
+
+public class TestClass {
+
+	public static void main(String[] args) {
+		//System.out.println("Test");
+		for(int i=5,x=0;i>0;i--,x++){
+			for(int k=0;k<x;k++){
+				System.out.print(" ");
+			}
+			for(int j=0;j<i;j++){
+				
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+	
+	HashSet<String> obj = new HashSet<String>();
+	
+	
+
+}

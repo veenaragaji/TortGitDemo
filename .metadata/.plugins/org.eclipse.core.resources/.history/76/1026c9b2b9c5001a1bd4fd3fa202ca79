@@ -1,0 +1,12 @@
+package base;
+
+import org.openqa.selenium.WebDriver;
+
+public class TestBase {
+	private WebDriver driver;
+	TestBase(){
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\hp au-620tx\\Desktop\\Selenium\\SW\\chromedriver_win32\\chromedriver.exe");
+		
+	}
+
+}

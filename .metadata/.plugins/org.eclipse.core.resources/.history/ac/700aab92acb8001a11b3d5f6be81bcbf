@@ -1,0 +1,18 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class Windows_AutoIT_Demo {
+	WebDriver driver;
+	@Test
+	public void demo() throws InterruptedException{
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\hp au-620tx\\Desktop\\Selenium\\SW\\chromedriver_win32\\chromedriver.exe");
+		driver = new ChromeDriver();
+		
+		driver.get("https://altoconvertpdftojpg.com/");
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("//button[@id='dropzoneInput-label']")).click();
+		
+	}
+}

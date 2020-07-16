@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+org.eclipse.debug.core.USE_STEP_FILTERS=false
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<watchExpressions>\r\n<expression enabled\="true" text\="prop.getProperty(&quot;Url&quot;)"/>\r\n<expression enabled\="true" text\="TestListeners.test"/>\r\n<expression enabled\="true" text\="test.log(Status.PASS, &quot;Step1-Login button identified-&quot;+test.addScreenCaptureFromPath(getScreenShot(&quot;login&quot;, driver)));&\#13;&\#10;"/>\r\n<expression enabled\="true" text\="getScreenShot(&quot;login&quot;, driver)"/>\r\n</watchExpressions>\r\n

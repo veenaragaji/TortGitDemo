@@ -1,0 +1,11 @@
+import java.lang.reflect.Method;
+
+public class MainClass {
+
+	public static void main(String[] args) throws NoSuchMethodException, SecurityException {
+		Child c=new Child();
+		//singleton class nd private con
+		
+	}
+
+}

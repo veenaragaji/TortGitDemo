@@ -1,0 +1,48 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.By;
+
+public class Registration1 
+{
+	String fName;
+	static WebDriver driver;
+	static String baseUrl; 
+	
+	public WebDriver setupDriver()
+	{
+	    
+	    driver=DriverSetup.getWebDriver();
+	    return driver;
+	}
+	
+	public void setElements()
+	{
+	    baseUrl="http://webapps.tekstac.com/Shopify/";
+	    driver.get(baseUrl);
+	    
+	    driver.findElement(By.id("firstname")).sendKeys("Rahul");
+	    driver.findElement(By.id("lastname")).sendKeys("Dravid");
+	    driver.findElement(By.id("username")).sendKeys("Rahul Dravid");
+	   
+	    Select dd=new Select( driver.findElement(By.id("selectcity")));
+	    dd.selectByIndex(1); 
+	    driver.findElement(By.id("pass")).sendKeys("pass#123");
+	    
+	    driver.findElement(By.id("reg")).click();
+		/*Using the driver, Find the elements by id 
+	      Set the values to the elements
+	      Register the form*/
+       
+	}
+	
+	public static void main(String[] args)
+	{
+	    Registration1 reg=new Registration1();
+	    driver=reg.setupDriver();
+	    reg.setElements();
+	    /* Implement the code here */
+	   
+	}
+
+}
+

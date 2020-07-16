@@ -1,0 +1,23 @@
+package runner;
+
+import threads.HRMHomeThread;
+
+public class TestRunner {
+
+	public static void main(String[] args) {
+		
+				
+		System.out.println(System.getProperty("chrome"));
+		System.out.println(System.getProperty("firefox"));
+		//System.out.println("Thread Started.........");
+		//t1.start();
+		//t2.start();
+		int chormeC=Integer.parseInt(System.getProperty("chrome"));
+		int geckoC=Integer.parseInt(System.getProperty("firefox"));
+		for(int i=0,j=0;i<chormeC || j< geckoC;i++,j++){
+			new HRMHomeThread("Firefox Thread","firefox").start();
+			new HRMHomeThread("Chrome Thread","chrome").start();
+		}
+	}
+
+}

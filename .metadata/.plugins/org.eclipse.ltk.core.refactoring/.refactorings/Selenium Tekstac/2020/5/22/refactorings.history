@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;Hooks/src&apos;&#x0D;&#x0A;- Original project: &apos;Selenium Tekstac&apos;&#x0D;&#x0A;- Destination element: &apos;Hooks/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     FormRegistrationAdvanced.NameLocator.java&#x0D;&#x0A;     FormRegistrationAdvanced.DriverSetup.java" description="Copy compilation units" destination="=Hooks/src" element1="/src&lt;FormRegistrationAdvanced{NameLocator.java" element2="/src&lt;FormRegistrationAdvanced{DriverSetup.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1590416640382" units="2" version="1.0"/>
+</session>
